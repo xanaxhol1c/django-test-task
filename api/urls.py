@@ -1,7 +1,7 @@
 from site import venv
 from django.urls import path
-from . import views
+from .views import FoodListView
 
 urlpatterns = [
-    path('v1/foods/', views.get_foods)
+    path('v1/foods/', FoodListView.as_view())
 ]

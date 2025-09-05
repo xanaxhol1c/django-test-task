@@ -16,7 +16,7 @@ class FoodCategory(TimeStampedModel):
     class Meta:
         verbose_name = 'Раздел меню'
         verbose_name_plural = 'Разделы меню'
-        ordering = ('name_ua', 'order_id')
+        ordering = ('order_id', 'name_ua')
         
 
 class Food(TimeStampedModel):

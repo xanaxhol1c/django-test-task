@@ -2,7 +2,7 @@ from rest_framework.serializers import ModelSerializer, SlugRelatedField
 from .models import Food, FoodCategory
 
 class FoodSerializer(ModelSerializer):
-    additional = SlugRelatedField(many=True, read_only=True, slug_field='internal_code')
+    additional = SlugRelatedField(many=True, read_only=True, slug_field='name_ua')
 
     class Meta:
         model = Food
